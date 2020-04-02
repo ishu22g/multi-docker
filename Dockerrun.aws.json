@@ -3,27 +3,27 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "stephengrider/multi-client",
+      "image": "ishu22g/multi-client",
       "hostname": "client",
       "essential": false,
       "memory": 128
     },
     {
       "name": "server",
-      "image": "stephengrider/multi-server",
+      "image": "ishu22g/multi-server",
       "hostname": "api",
       "essential": false,
       "memory": 128
     },
     {
       "name": "worker",
-      "image": "stephengrider/multi-worker",
+      "image": "ishu22g/multi-worker",
       "essential": false,
       "memory": 128
     },
     {
       "name": "ngnix",
-      "image": "stephengrider/multi-ngnix",
+      "image": "ishu22g/multi-ngnix",
       "essential": true,
       "memory": 128,
       "portMappings": [
