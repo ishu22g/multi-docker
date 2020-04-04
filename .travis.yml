@@ -24,6 +24,7 @@ after_success:
 
 deploy:
   edge: true
+  # only_create_app_version: true
   provider: "elasticbeanstalk"
   region: "us-west-2"
   app: "multi-docker"
