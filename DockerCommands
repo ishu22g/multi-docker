@@ -1,0 +1,23 @@
+docker-compose up --build
+
+docker run -it 37a15c616db5 npm run test
+
+docker build -f Dockerfile.dev .
+
+docker exec -it 1ce761ab3f8c npm run test
+
+docker push ishu22g/multi-client:v5
+
+
+
+docker stop $(docker ps -a -q)
+
+docker rm $(docker ps -a -q)
+
+docker rmi $(docker images -a -q)
+
+eval $(minikube docker-env)
+
+docker logs container_id
+
+docker system prune -a
